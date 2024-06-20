@@ -12,7 +12,7 @@ resource "rhcs_identity_provider" "htpasswd_idp" {
 }
 
 # github
-resource "ocm_identity_provider" "github_idp" {
+resource "rhcs_identity_provider" "github_idp" {
   cluster = "cluster-id-123"
   name    = "Github"
   github = {
@@ -23,7 +23,7 @@ resource "ocm_identity_provider" "github_idp" {
 }
 
 # gitlab
-resource "ocm_identity_provider" "gitlab_idp" {
+resource "rhcs_identity_provider" "gitlab_idp" {
   cluster = "cluster-id-123"
   name    = "GitLab"
   gitlab = {
@@ -34,7 +34,7 @@ resource "ocm_identity_provider" "gitlab_idp" {
 }
 
 # google
-resource "ocm_identity_provider" "google_idp" {
+resource "rhcs_identity_provider" "google_idp" {
   cluster = "cluster-id-123"
   name = "google"
   google = {
